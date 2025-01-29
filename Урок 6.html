@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 6</title>
+</head>
+<body>
+    <h1>Формы</h1>
+    Основным тэгом является 'form'>'input'. 'Label' нужен в качестве названия и мини-ссылки на форму. При этом значения for="" и id="" должны быть уникальными и совпадать. Значение value="" задает текст по умолчанию
+    <form>
+        <label for="123">Привет</label>
+        <input type="text" id="123" value="Текст по умолчанию">
+    </form>
+    <br>
+    Для того, чтобы формы были на разных строчках используется 'div'. Type="text" и type="number" говорят сами за себя. Значение placeholder="" добавит подсказку в само поле.
+    Number может быть ограничен, если указать значения min="" и max="". А если к value="Цой жив" добавить 'readonly', то получим нестираемую правду
+    <form action="">
+        <div>
+
+            <label for="Имя">Имя</label>
+            <input type="text" id="Имя" placeholder="Введите имя">
+
+        </div>
+        <div>
+
+            <label for="Фамилия">Фамилия</label>
+            <input type="text" id="Фамилия" placeholder="Введите фамилию">
+
+        </div>
+        <div>
+
+            <label for="number">Возраст</label>
+            <input type="number" id="number" min="0" max="100">
+
+        </div>
+        <div>
+
+            <label for="пример">Надпись на заборе</label>
+            <input type="text" id="пример" value="Цой жив" readonly>
+
+        </div>
+    </form>
+    <br>
+    Если указать, что type="email" и type="password", то мы получим
+    <form action="">
+        <div>
+
+            <label for="Email">Email</label>
+            <input type="email" id="Email">
+
+        </div>
+        <div>
+
+            <label for="Password">Password</label>
+            <input type="password" id="Password">
+
+        </div>
+    </form>
+    <br>
+    Type="range" позволяет создавать ползунки, а type="date" - дату
+    <form action="">
+        <div>
+
+            <label for="range">Писькометр</label>
+            <input type="range" id="range" min="0" max="30" step="1">
+
+        </div>
+        <div>
+
+            <label for="date">Дата</label>
+            <input type="date" id="date">
+
+        </div>
+    </form>
+    <br>
+    Type="color"
+    <form action="">
+        <div>
+
+            <label for="color">Цвет</label>
+            <input type="color" id="color">
+
+        </div>
+    </form>
+    <br>
+    Для большого объема текста вместо 'input' используется 'textarea'. Параметры cols="" и rows="" задают размер поля по умолчанию
+    <form action="">
+        <div>
+
+            <label for="message">Ваше эссе</label>
+            <br>
+            <textarea id="message" cols="25" rows="5">
+            </textarea>
+
+        </div>
+    </form>
+    <br>
+    Если использовать 'select', то получится следующее
+    <form action="">
+        <div>
+
+            <label for="sex">Ваш пол</label>
+            <select id="sex">
+                <option value="male">Мужчина</option>
+                <option value="female">Женщина</option>
+                <option value="other" selected>Другое</option>
+            </select>
+            </textarea>
+            Внутри тэга 'select' необходимо описать тэг 'option'. Атрибут 'selected' позволяет сделать предустановленный выбор
+
+        </div>
+    </form>
+    <br>
+    Type="radio". Все name="" должны иметь одинаковое значение
+    <form action="">
+        <div>
+
+            <label>То самое</label>
+            <input type="radio" name="cm"> 5-10
+            <input type="radio" name="cm"> 11-15
+            <input type="radio" name="cm"> 16-20
+            <input type="radio" name="cm"> 20+
+
+        </div>
+    </form>
+    <br>
+    Type="checkbox" работает по схожему принципу, но позволяет иметь более одного варианта ответа
+    <form action="">
+        <div>
+
+            <label>Любимый алкоголь</label>
+            <input type="checkbox" name="alco"> Ром
+            <input type="checkbox" name="alco"> Джин
+            <input type="checkbox" name="alco"> Виски
+            <input type="checkbox" name="alco"> Текила
+
+        </div>
+    </form>
+    <br>
+    Type="submit". Value="" отвечает за текст на кнопочке
+    <div>
+        <input type="submit" value="Отправить">
+    </div>
+    <br>
+    Тэг 'button' делает то же самое, что и 'input' в данном случае
+    <div>
+        <button type="submit">То же самое</button>
+    </div>
+
+</body>
+</html>

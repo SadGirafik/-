@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 4</title>
+</head>
+<body>
+    <h1>Списки</h1>
+    Тэг 'ul' нужен для ненумерованных списков, тэг 'ol' для пронумерованных. Внутри обоих тэгов должен быть тэг 'li',обрамляющий каждый новый элемент списка.
+    <br>
+    <ul>
+        <li>Список 1</li>
+        <li>Список 2</li>
+        <li>Список 3</li>
+        <li>Список 4</li>
+        <li>Список 5</li>
+        <li>Список 6</li>
+    </ul>
+    <br>
+    <ol>
+        <li>Список 1</li>
+        <li>Список 2</li>
+        <li>Список 3</li>
+        <li>Список 4</li>
+        <li>Список 5</li>
+        <li>Список 6</li>
+    </ol>
+    <br>
+    Списки могут быть кастомизированы с помощью атрибута 'type'.
+    <hr>
+    <ul>
+        <li>Список 1</li>
+        <li>Список 2</li>
+        <li>Список 3
+            <ul>
+                <li>Вложенный элемент 1</li>
+                <li>Вложенный элемент 2</li>
+            </ul>
+        </li>    
+        <li>Список 4</li> 
+    </ul>
+    <hr>
+    С помощью Emmet создавать списки можно быстрее, например ul>li{Element}*5
+    <br>
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+    </ul>
+    <hr>
+    Для пронумерованных Element используют значок $ в синтаксисе ul>li{Element $}*5
+    <br>
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+    </ul>
+</body>
+</html>

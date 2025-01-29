@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блоки</title>
+    <style>
+        .header{border-bottom: 2px solid gray;}
+
+        .block{background-color: rgb(6, 107, 107);
+              padding: 10px;
+              margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+    <h1>Блоки и семантика</h1>
+Тэги бывают блочными и линейными. Первые занимают всю строку. Например, заголовки и параграфы. Линейные же идут друг за другом в одной строке.
+Для отображения границы блока можно использовать style=""
+<p style="border: 2px solid teal;">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates facilis incidunt pariatur nihil non porro, necessitatibus tempora, ullam quas illum nam. Pariatur sit asperiores ratione velit labore. Assumenda, perspiciatis accusantium?
+</p>
+
+<hr>
+
+Для создания блоков используют 'div' с указанием id для навигации. Id в HTML должен быть уникальным. 
+Id и Class могут быть описаны в блоках. Второй используется для стилистики и может быть группирован. 
+Строчным аналогом 'div' является 'span'
+
+<div id="header" Class="header">
+    <h2>Заголовок</h2>
+</div>
+
+<hr>
+
+<div id="block1" class="block">
+    <h3>Блок 1</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium velit quos, quidem laboriosam maiores inventore voluptatem ipsam eos asperiores labore ullam adipisci quod error sint obcaecati distinctio recusandae tenetur quo?</p>
+</div>
+
+<hr>
+
+<div id="block2" class="block">
+    <h3>Блок 2</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium velit quos, quidem laboriosam maiores inventore voluptatem ipsam eos asperiores labore ullam adipisci quod error sint obcaecati distinctio recusandae tenetur quo?</p>
+</div>
+
+<hr>
+
+Для быстрого создания 'div' с class и id можно использовать 'div.' и 'div#' соответственно
+<hr>
+Вместо 'div' можно использовать 'header', 'nav', 'article', 'section', 'footer', 'aside'. Все они выполняют ту же функцию, что и 'div', но улучшают семантику
+</body>
+</html>
